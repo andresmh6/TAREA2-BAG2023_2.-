@@ -1,0 +1,111 @@
+Started analysis of sample_chip_1.fq.gz
+Approx 5% complete for sample_chip_1.fq.gz
+Approx 10% complete for sample_chip_1.fq.gz
+Approx 15% complete for sample_chip_1.fq.gz
+Approx 20% complete for sample_chip_1.fq.gz
+Approx 25% complete for sample_chip_1.fq.gz
+Approx 30% complete for sample_chip_1.fq.gz
+Approx 35% complete for sample_chip_1.fq.gz
+Approx 40% complete for sample_chip_1.fq.gz
+Approx 45% complete for sample_chip_1.fq.gz
+Approx 50% complete for sample_chip_1.fq.gz
+Approx 55% complete for sample_chip_1.fq.gz
+Approx 60% complete for sample_chip_1.fq.gz
+Approx 65% complete for sample_chip_1.fq.gz
+Approx 70% complete for sample_chip_1.fq.gz
+Approx 75% complete for sample_chip_1.fq.gz
+Approx 80% complete for sample_chip_1.fq.gz
+Approx 85% complete for sample_chip_1.fq.gz
+Approx 90% complete for sample_chip_1.fq.gz
+Approx 95% complete for sample_chip_1.fq.gz
+Warning: gzbuffer added in zlib v1.2.3.5. Unable to change buffer size from default of 8192.
+1561512 reads; of these:
+  1561512 (100.00%) were unpaired; of these:
+    578 (0.04%) aligned 0 times
+    1527828 (97.84%) aligned exactly 1 time
+    33106 (2.12%) aligned >1 times
+99.96% overall alignment rate
+Started analysis of sample_input_1.fq.gz
+Approx 5% complete for sample_input_1.fq.gz
+Approx 10% complete for sample_input_1.fq.gz
+Approx 15% complete for sample_input_1.fq.gz
+Approx 20% complete for sample_input_1.fq.gz
+Approx 25% complete for sample_input_1.fq.gz
+Approx 30% complete for sample_input_1.fq.gz
+Approx 35% complete for sample_input_1.fq.gz
+Approx 40% complete for sample_input_1.fq.gz
+Approx 45% complete for sample_input_1.fq.gz
+Approx 50% complete for sample_input_1.fq.gz
+Approx 55% complete for sample_input_1.fq.gz
+Approx 60% complete for sample_input_1.fq.gz
+Approx 65% complete for sample_input_1.fq.gz
+Approx 70% complete for sample_input_1.fq.gz
+Approx 75% complete for sample_input_1.fq.gz
+Approx 80% complete for sample_input_1.fq.gz
+Approx 85% complete for sample_input_1.fq.gz
+Approx 90% complete for sample_input_1.fq.gz
+Approx 95% complete for sample_input_1.fq.gz
+Warning: gzbuffer added in zlib v1.2.3.5. Unable to change buffer size from default of 8192.
+235150 reads; of these:
+  235150 (100.00%) were unpaired; of these:
+    1187 (0.50%) aligned 0 times
+    227892 (96.91%) aligned exactly 1 time
+    6071 (2.58%) aligned >1 times
+99.50% overall alignment rate
+[E::hts_open_format] Failed to open file input_1.bam
+samtools index: failed to open "input_1.bam": No such file or directory
+INFO  @ Tue, 05 Dec 2023 17:10:00: 
+# Command line: callpeak -t ../chip/chip_1.bam -c ../input/input_1.bam -f BAM -n 1
+# ARGUMENTS LIST:
+# name = 1
+# format = BAM
+# ChIP-seq file = ['../chip/chip_1.bam']
+# control file = ['../input/input_1.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 5.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+ 
+INFO  @ Tue, 05 Dec 2023 17:10:00: #1 read tag files... 
+INFO  @ Tue, 05 Dec 2023 17:10:00: #1 read treatment tags... 
+INFO  @ Tue, 05 Dec 2023 17:10:03:  1000000 
+INFO  @ Tue, 05 Dec 2023 17:10:05: 1560934 reads have been read. 
+INFO  @ Tue, 05 Dec 2023 17:10:05: #1.2 read input tags... 
+INFO  @ Tue, 05 Dec 2023 17:10:06: 233963 reads have been read. 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #1 tag size is determined as 36 bps 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #1 tag size = 36.0 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #1  total tags in treatment: 1560934 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #1 user defined the maximum tags... 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #1 filter out redundant tags at the same location and the same strand by allowing at most 1 tag(s) 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #1  tags after filtering in treatment: 985555 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #1  Redundant rate of treatment: 0.37 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #1  total tags in control: 233963 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #1 user defined the maximum tags... 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #1 filter out redundant tags at the same location and the same strand by allowing at most 1 tag(s) 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #1  tags after filtering in control: 206246 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #1  Redundant rate of control: 0.12 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #1 finished! 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #2 Build Peak Model... 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #2 looking for paired plus/minus strand peaks... 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #2 number of paired peaks: 520 
+WARNING @ Tue, 05 Dec 2023 17:10:06: Fewer paired peaks (520) than 1000! Model may not be build well! Lower your MFOLD parameter may erase this warning. Now I will use 520 pairs to build model! 
+INFO  @ Tue, 05 Dec 2023 17:10:06: start model_add_line... 
+INFO  @ Tue, 05 Dec 2023 17:10:06: start X-correlation... 
+INFO  @ Tue, 05 Dec 2023 17:10:06: end of X-cor 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #2 finished! 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #2 predicted fragment length is 159 bps 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #2 alternative fragment length(s) may be 159,450,501,562,585 bps 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #2.2 Generate R script for model : 1_model.r 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #3 Call peaks... 
+INFO  @ Tue, 05 Dec 2023 17:10:06: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Tue, 05 Dec 2023 17:10:10: #3 Call peaks for each chromosome... 
+INFO  @ Tue, 05 Dec 2023 17:10:12: #4 Write output xls file... 1_peaks.xls 
+INFO  @ Tue, 05 Dec 2023 17:10:12: #4 Write peak in narrowPeak format file... 1_peaks.narrowPeak 
+INFO  @ Tue, 05 Dec 2023 17:10:12: #4 Write summits bed file... 1_summits.bed 
+INFO  @ Tue, 05 Dec 2023 17:10:12: Done! 

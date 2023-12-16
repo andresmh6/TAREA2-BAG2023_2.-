@@ -1,0 +1,13 @@
+installation_directory: /home/bag2023_2/tarea2_definitiva
+working_directory: /home/bag2023_2/tarea2_definitiva
+experiment_name: prr5_test 
+number_replicas: 1
+path_genome: /home/bag2023_2/chipmuestras/chromosome1.fa
+path_annotation: /home/bag2023_2/chipmuestras/chromosome1.gtf
+path_sample_chip_1: /home/bag2023_2/chipmuestras/chip_prr5_chr1.fq.gz
+path_sample_input_1: /home/bag2023_2/chipmuestras/input_prr5_chr1.fq.gz
+universe_chromosomes: 1
+type_of_peak: 1
+single_or_paired: 1
+tss_upstream: 1000
+tss_downstream: 1000

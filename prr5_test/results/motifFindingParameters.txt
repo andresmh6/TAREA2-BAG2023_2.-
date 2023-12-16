@@ -1,0 +1,1 @@
+cmd = merged_2.narrowPeak /home/bag2023_2/tarea2_definitiva/prr5_test/genome/genome.fa . -len 9 -size 100

@@ -1,0 +1,15 @@
+1
+1
+1000
+1000
+/home/bag2023_2/tarea2_definitiva/prr5_test/genome/genome.fa
+>> preparing features information...		 2023-12-05 17:10:41 
+>> identifying nearest features...		 2023-12-05 17:10:42 
+>> calculating distance from peak to TSS...	 2023-12-05 17:10:43 
+>> assigning genomic annotation...		 2023-12-05 17:10:43 
+>> adding gene annotation...			 2023-12-05 17:10:56 
+>> assigning chromosome lengths			 2023-12-05 17:10:56 
+>> done...					 2023-12-05 17:10:56 
+pdf 
+  2 
+[1] "No significant enrichment of KEGG pathways was observed."

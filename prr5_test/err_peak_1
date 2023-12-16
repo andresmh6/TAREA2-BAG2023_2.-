@@ -1,0 +1,654 @@
+Possible Ensembl SSL connectivity problems detected.
+Please see the 'Connection Troubleshooting' section of the biomaRt vignette
+vignette('accessing_ensembl', package = 'biomaRt')Error in curl::curl_fetch_memory(url, handle = handle) : 
+  SSL certificate problem: certificate has expired
+
+
+ChIPseeker v1.26.2  For help: https://guangchuangyu.github.io/software/ChIPseeker
+
+If you use ChIPseeker in published research, please cite:
+Guangchuang Yu, Li-Gen Wang, Qing-Yu He. ChIPseeker: an R/Bioconductor package for ChIP peak annotation, comparison and visualization. Bioinformatics 2015, 31(14):2382-2383
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+
+Loading required package: GenomicFeatures
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+clusterProfiler v3.18.1  For help: https://guangchuangyu.github.io/software/clusterProfiler
+
+If you use clusterProfiler in published research, please cite:
+Guangchuang Yu, Li-Gen Wang, Yanyan Han, Qing-Yu He. clusterProfiler: an R package for comparing biological themes among gene clusters. OMICS: A Journal of Integrative Biology. 2012, 16(5):284-287.
+
+Attaching package: ‘clusterProfiler’
+
+The following object is masked from ‘package:AnnotationDbi’:
+
+    select
+
+The following object is masked from ‘package:IRanges’:
+
+    slice
+
+The following object is masked from ‘package:S4Vectors’:
+
+    rename
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+
+##############################################################################
+Pathview is an open source software package distributed under GNU General
+Public License version 3 (GPLv3). Details of GPLv3 is available at
+http://www.gnu.org/licenses/gpl-3.0.html. Particullary, users are required to
+formally cite the original Pathview paper (not just mention it) in publications
+or products. For details, do citation("pathview") within R.
+
+The pathview downloads and uses KEGG data. Non-academic uses may require a KEGG
+license agreement (details at http://www.kegg.jp/kegg/legal.html).
+##############################################################################
+Warning message:
+In annotatePeak(peak = peaks, tssRegion = c(-(tssdown), tssup),  :
+  Unknown ID type, gene annotation will not be added...
+wrong orderBy parameter; set to default `orderBy = "x"`
+Reading KEGG annotation online:
+
+Reading KEGG annotation online:
+
+--> No gene can be mapped....
+--> Expected input gene ID: 
+--> return NULL...
+
+	Position file = merged_2.narrowPeak
+	Genome = /home/bag2023_2/tarea2_definitiva/prr5_test/genome/genome.fa
+	Output Directory = .
+	Motif length set at 9,
+	Fragment size set to 100
+	Using Custom Genome
+	Peak/BED file conversion summary:
+		BED/Header formatted lines: 902
+		peakfile formatted lines: 0
+
+	Peak File Statistics:
+		Total Peaks: 902
+		Redundant Peak IDs: 0
+		Peaks lacking information: 0 (need at least 5 columns per peak)
+		Peaks with misformatted coordinates: 0 (should be integer)
+		Peaks with misformatted strand: 0 (should be either +/- or 0/1)
+
+	Peak file looks good!
+
+ls: cannot access '/home/bag2023_2/tarea2_definitiva/prr5_test/genome/preparsed//genome.fa.*.cgbins': No such file or directory
+	Could not find background files for 100 bp fragments
+	Below are the sizes that are already available prepared.
+	HOMER will now create background files for 100 bp fragments
+	To CANCEL and rerun with a differet "-size <#>", hit <CTRL+C> now!
+		5
+		4
+		3
+		2
+		1
+	Preparsing genome for 100 bp fragments...(will probably take 1-5 min)
+	Using Custom Genome
+	preparse size set to 100
+
+	No reference file found - using random positions...
+	Output files will be placed in /home/bag2023_2/tarea2_definitiva/prr5_test/genome/preparsed//genome.fa.100.* ...
+	By default, HOMER will set the the preparsed Directory to be group read/write
+	Custom genome sequence file: /home/bag2023_2/tarea2_definitiva/prr5_test/genome/genome.fa
+
+	Checking sequences from file: /home/bag2023_2/tarea2_definitiva/prr5_test/genome/genome.fa
+	Extracting sequences
+	Custom genome sequence file: /home/bag2023_2/tarea2_definitiva/prr5_test/genome/genome.fa
+
+	Extracting sequences from file: /home/bag2023_2/tarea2_definitiva/prr5_test/genome/genome.fa
+	Looking for peak sequences in a single file (/home/bag2023_2/tarea2_definitiva/prr5_test/genome/genome.fa)
+	Extracting 213051 sequences from 1
+		1111 of 212870 removed because they had >70.00% Ns (i.e. masked repeats)
+
+	Sequences processed:
+		Auto detected maximum sequence length of 133 bp
+		100000
+		200000
+		211759 total
+
+	Frequency Bins: 0.01 0.02 0.03 0.04 0.05 0.06 0.08 0.1 0.12 0.14 0.16
+	Freq	Bin	Count
+	0.01	0	37432
+	0.02	1	50923
+	0.03	2	44891
+	0.04	3	31673
+	0.05	4	19388
+	0.06	5	11464
+	0.08	6	10457
+	0.1	7	3746
+	0.12	8	1323
+	0.14	9	362
+	0.16	10	82
+	11	11	18
+	Frequency Bins: 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.6 0.7 0.8
+	Freq	Bin	Count
+	0.2	0	7102
+	0.25	1	15449
+	0.3	2	30301
+	0.35	3	44747
+	0.4	4	47670
+	0.45	5	38085
+	0.5	6	19604
+	0.6	7	8388
+	0.7	8	411
+	0.8	9	2
+
+	Custom genome sequence file: /home/bag2023_2/tarea2_definitiva/prr5_test/genome/genome.fa
+
+	Extracting sequences from file: /home/bag2023_2/tarea2_definitiva/prr5_test/genome/genome.fa
+	Looking for peak sequences in a single file (/home/bag2023_2/tarea2_definitiva/prr5_test/genome/genome.fa)
+	Extracting 902 sequences from 1
+
+	Not removing redundant sequences
+
+
+	Sequences processed:
+		Auto detected maximum sequence length of 101 bp
+		902 total
+
+	Frequency Bins: 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.6 0.7 0.8
+	Freq	Bin	Count
+	0.2	0	1
+	0.3	2	6
+	0.35	3	51
+	0.4	4	186
+	0.45	5	284
+	0.5	6	215
+	0.6	7	150
+	0.7	8	8
+	0.8	9	1
+
+	Total sequences set to 50000
+
+	Choosing background that matches in CpG/GC content...
+	Bin	# Targets	# Background	Background Weight
+	0	1	54	1.008
+	2	6	327	0.999
+	3	51	2776	1.000
+	4	186	10124	1.000
+	5	284	15459	1.000
+	6	215	11703	1.000
+	7	150	8241	0.991
+	8	8	411	1.059
+	9	1	2	27.216
+	Assembling sequence file...
+	Normalizing lower order oligos using homer2
+
+	Reading input files...
+	49999 total sequences read
+	Autonormalization: 1-mers (4 total)
+		A	27.92%	28.07%	0.995
+		C	22.08%	21.93%	1.007
+		G	22.08%	21.93%	1.007
+		T	27.92%	28.07%	0.995
+	Autonormalization: 2-mers (16 total)
+		AA	8.97%	8.78%	1.022
+		CA	6.85%	6.78%	1.011
+		GA	6.94%	7.30%	0.950
+		TA	5.14%	5.20%	0.987
+		AC	6.44%	5.52%	1.166
+		CC	4.76%	4.77%	0.999
+		GC	3.96%	4.35%	0.910
+		TC	6.94%	7.30%	0.950
+		AG	5.75%	6.75%	0.852
+		CG	4.71%	3.64%	1.295
+		GG	4.76%	4.77%	0.999
+		TG	6.85%	6.78%	1.011
+		AT	6.77%	7.01%	0.965
+		CT	5.75%	6.75%	0.852
+		GT	6.44%	5.52%	1.166
+		TT	8.97%	8.78%	1.022
+	Autonormalization: 3-mers (64 total)
+	Normalization weights can be found in file: ./seq.autonorm.tsv
+	Converging on autonormalization solution:
+	...............................................................................
+	Final normalization:	Autonormalization: 1-mers (4 total)
+		A	27.92%	27.93%	1.000
+		C	22.08%	22.07%	1.000
+		G	22.08%	22.07%	1.000
+		T	27.92%	27.93%	1.000
+	Autonormalization: 2-mers (16 total)
+		AA	8.97%	8.93%	1.005
+		CA	6.85%	6.79%	1.009
+		GA	6.94%	7.00%	0.991
+		TA	5.14%	5.20%	0.987
+		AC	6.44%	6.24%	1.033
+		CC	4.76%	4.81%	0.991
+		GC	3.96%	4.03%	0.981
+		TC	6.94%	7.00%	0.991
+		AG	5.75%	5.92%	0.971
+		CG	4.71%	4.55%	1.035
+		GG	4.76%	4.81%	0.991
+		TG	6.85%	6.79%	1.009
+		AT	6.77%	6.84%	0.990
+		CT	5.75%	5.92%	0.971
+		GT	6.44%	6.24%	1.033
+		TT	8.97%	8.93%	1.005
+	Autonormalization: 3-mers (64 total)
+	Finished preparing sequence/group files
+
+	----------------------------------------------------------
+	Known motif enrichment
+
+	Reading input files...
+	49999 total sequences read
+	1006 motifs loaded
+	Cache length = 11180
+	Using binomial scoring
+	Checking enrichment of 1006 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+	Preparing HTML output with sequence logos...
+		1 of 1006 (1e-56) SPCH(bHLH)/Seedling-SPCH-ChIP-Seq(GSE57497)/Homer
+		2 of 1006 (1e-50) E-box/Arabidopsis-Promoters/Homer
+		3 of 1006 (1e-50) IBL1(bHLH)/Seedling-IBL1-ChIP-Seq(GSE51120)/Homer
+		4 of 1006 (1e-49) ABF1(bZIP)/Arabidopsis-ABF1-ChIP-Seq(GSE80564)/Homer
+		5 of 1006 (1e-46) CLOCK(bHLH)/Liver-Clock-ChIP-Seq(GSE39860)/Homer
+		6 of 1006 (1e-45) bZIP53(bZIP)/colamp-bZIP53-DAP-Seq(GSE60143)/Homer
+		7 of 1006 (1e-45) ABI5(bZIP)/col-ABI5-DAP-Seq(GSE60143)/Homer
+		8 of 1006 (1e-44) AREB3(bZIP)/col-AREB3-DAP-Seq(GSE60143)/Homer
+		9 of 1006 (1e-42) bZIP3(bZIP)/col-bZIP3-DAP-Seq(GSE60143)/Homer
+		10 of 1006 (1e-41) c-Myc(bHLH)/LNCAP-cMyc-ChIP-Seq(Unpublished)/Homer
+		11 of 1006 (1e-41) bZIP68(bZIP)/col-bZIP68-DAP-Seq(GSE60143)/Homer
+		12 of 1006 (1e-40) USF1(bHLH)/GM12878-Usf1-ChIP-Seq(GSE32465)/Homer
+		13 of 1006 (1e-40) ABF2(bZIP)/col-ABF2-DAP-Seq(GSE60143)/Homer
+		14 of 1006 (1e-40) bZIP16(bZIP)/colamp-bZIP16-DAP-Seq(GSE60143)/Homer
+		15 of 1006 (1e-39) PIF4(bHLH)/Seedling-PIF4-ChIP-Seq(GSE35315)/Homer
+		16 of 1006 (1e-39) bZIP28(bZIP)/col-bZIP28-DAP-Seq(GSE60143)/Homer
+		17 of 1006 (1e-38) Max(bHLH)/K562-Max-ChIP-Seq(GSE31477)/Homer
+		18 of 1006 (1e-38) BIM2(bHLH)/col-BIM2-DAP-Seq(GSE60143)/Homer
+		19 of 1006 (1e-38) bZIP48(bZIP)/colamp-bZIP48-DAP-Seq(GSE60143)/Homer
+		20 of 1006 (1e-37) GBF5(bZIP)/colamp-GBF5-DAP-Seq(GSE60143)/Homer
+		21 of 1006 (1e-37) bHLH34(bHLH)/colamp-bHLH34-DAP-Seq(GSE60143)/Homer
+		22 of 1006 (1e-37) At4g36780(BZR)/col-At4g36780-DAP-Seq(GSE60143)/Homer
+		23 of 1006 (1e-35) bHLHE41(bHLH)/proB-Bhlhe41-ChIP-Seq(GSE93764)/Homer
+		24 of 1006 (1e-35) NPAS2(bHLH)/Liver-NPAS2-ChIP-Seq(GSE39860)/Homer
+		25 of 1006 (1e-34) At1g78700(BZR)/col-At1g78700-DAP-Seq(GSE60143)/Homer
+		26 of 1006 (1e-34) n-Myc(bHLH)/mES-nMyc-ChIP-Seq(GSE11431)/Homer
+		27 of 1006 (1e-34) BMAL1(bHLH)/Liver-Bmal1-ChIP-Seq(GSE39860)/Homer
+		28 of 1006 (1e-34) PIF5ox(bHLH)/Arabidopsis-PIF5ox-ChIP-Seq(GSE35062)/Homer
+		29 of 1006 (1e-33) GBF6(bZIP)/colamp-GBF6-DAP-Seq(GSE60143)/Homer
+		30 of 1006 (1e-32) GBF3(bZIP)/Arabidopsis-GBF3-ChIP-Seq(GSE80564)/Homer
+		31 of 1006 (1e-32) Usf2(bHLH)/C2C12-Usf2-ChIP-Seq(GSE36030)/Homer
+		32 of 1006 (1e-31) MNT(bHLH)/HepG2-MNT-ChIP-Seq(Encode)/Homer
+		33 of 1006 (1e-30) HY5(bZIP)/colamp-HY5-DAP-Seq(GSE60143)/Homer
+		34 of 1006 (1e-30) Pho4(bHLH)/Yeast-Pho4-ChIP-Seq(GSE29506)/Homer
+		35 of 1006 (1e-29) NPAS(bHLH)/Liver-NPAS-ChIP-Seq(GSE39860)/Homer
+		36 of 1006 (1e-26) c-Myc(bHLH)/mES-cMyc-ChIP-Seq(GSE11431)/Homer
+		37 of 1006 (1e-23) Pho2(bHLH)/Yeast-Pho2-ChIP-Seq(GSE29506)/Homer
+		38 of 1006 (1e-21) GT3a(Trihelix)/col-GT3a-DAP-Seq(GSE60143)/Homer
+		39 of 1006 (1e-20) bHLHE40(bHLH)/HepG2-BHLHE40-ChIP-Seq(GSE31477)/Homer
+		40 of 1006 (1e-20) PIF7(bHLH)/col-PIF7-DAP-Seq(GSE60143)/Homer
+		41 of 1006 (1e-19) TCP7(TCP)/col-TCP7-DAP-Seq(GSE60143)/Homer
+		42 of 1006 (1e-18) bHLH74(bHLH)/col-bHLH74-DAP-Seq(GSE60143)/Homer
+		43 of 1006 (1e-18) BAM8(BES1)/col-BAM8-DAP-Seq(GSE60143)/Homer
+		44 of 1006 (1e-18) At5g08330(TCP)/col-At5g08330-DAP-Seq(GSE60143)/Homer
+		45 of 1006 (1e-18) FAR1(FAR1)/col-FAR1-DAP-Seq(GSE60143)/Homer
+		46 of 1006 (1e-16) Ptf1a(bHLH)/Panc1-Ptf1a-ChIP-Seq(GSE47459)/Homer
+		47 of 1006 (1e-16) HEB(bHLH)/mES-Heb-ChIP-Seq(GSE53233)/Homer
+		48 of 1006 (1e-16) Cbf1(bHLH)/Yeast-Cbf1-ChIP-Seq(GSE29506)/Homer
+		49 of 1006 (1e-15) At4g18890(BZR)/col-At4g18890-DAP-Seq(GSE60143)/Homer
+		50 of 1006 (1e-14) At2g45680(TCP)/colamp-At2g45680-DAP-Seq(GSE60143)/Homer
+		51 of 1006 (1e-14) FHY3(FAR1)/Arabidopsis-FHY3-ChIP-Seq(GSE30711)/Homer
+		52 of 1006 (1e-14) At1g72010(TCP)/colamp-At1g72010-DAP-Seq(GSE60143)/Homer
+		53 of 1006 (1e-13) TCP3(TCP)/colamp-TCP3-DAP-Seq(GSE60143)/Homer
+		54 of 1006 (1e-12) MITF(bHLH)/MastCells-MITF-ChIP-Seq(GSE48085)/Homer
+		55 of 1006 (1e-12) At1g69690(TCP)/colamp-At1g69690-DAP-Seq(GSE60143)/Homer
+		56 of 1006 (1e-11) HIF-1b(HLH)/T47D-HIF1b-ChIP-Seq(GSE59937)/Homer
+		57 of 1006 (1e-11) BIM3(bHLH)/col-BIM3-DAP-Seq(GSE60143)/Homer
+		58 of 1006 (1e-10) TCP20(TCP)/col-TCP20-DAP-Seq(GSE60143)/Homer
+		59 of 1006 (1e-10) ZNF692(Zf)/HEK293-ZNF692.GFP-ChIP-Seq(GSE58341)/Homer
+		60 of 1006 (1e-9) BIM1(bHLH)/colamp-BIM1-DAP-Seq(GSE60143)/Homer
+		61 of 1006 (1e-9) DPL-1(E2F)/cElegans-Adult-ChIP-Seq(modEncode)/Homer
+		62 of 1006 (1e-9) At1g14580(C2H2)/colamp-At1g14580-DAP-Seq(GSE60143)/Homer
+		63 of 1006 (1e-9) FRS9(ND)/col-FRS9-DAP-Seq(GSE60143)/Homer
+		64 of 1006 (1e-8) CAMTA1(CAMTA)/col-CAMTA1-DAP-Seq(GSE60143)/Homer
+		65 of 1006 (1e-8) ATAF1(NAC)/col-ATAF1-DAP-Seq(GSE60143)/Homer
+		66 of 1006 (1e-8) ZML1(C2C2gata)/colamp-ZML1-DAP-Seq(GSE60143)/Homer
+		67 of 1006 (1e-8) Tgif2(Homeobox)/mES-Tgif2-ChIP-Seq(GSE55404)/Homer
+		68 of 1006 (1e-8) ZIM(C2C2gata)/col-ZIM-DAP-Seq(GSE60143)/Homer
+		69 of 1006 (1e-8) GAGA-repeat/SacCer-Promoters/Homer
+		70 of 1006 (1e-8) At3g45610(C2C2dof)/col-At3g45610-DAP-Seq(GSE60143)/Homer
+		71 of 1006 (1e-7) AT5G63260(C3H)/col-AT5G63260-DAP-Seq(GSE60143)/Homer
+		72 of 1006 (1e-7) DAG2(C2C2dof)/col-DAG2-DAP-Seq(GSE60143)/Homer
+		73 of 1006 (1e-7) CAMTA5(CAMTA)/col-CAMTA5-DAP-Seq(GSE60143)/Homer
+		74 of 1006 (1e-7) E-box(bHLH)/Promoter/Homer
+		75 of 1006 (1e-7) O2(bZIP)/Corn-O2-ChIP-Seq(GSE63991)/Homer
+		76 of 1006 (1e-7) bZIP44(bZIP)/colamp-bZIP44-DAP-Seq(GSE60143)/Homer
+		77 of 1006 (1e-6) GAGA-repeat/Arabidopsis-Promoters/Homer
+		78 of 1006 (1e-6) OBP3(C2C2dof)/col-OBP3-DAP-Seq(GSE60143)/Homer
+		79 of 1006 (1e-6) IDD2(C2H2)/colamp-IDD2-DAP-Seq(GSE60143)/Homer
+		80 of 1006 (1e-6) BZR1(BZR)/col-BZR1-DAP-Seq(GSE60143)/Homer
+		81 of 1006 (1e-6) AT5G02460(C2C2dof)/col-AT5G02460-DAP-Seq(GSE60143)/Homer
+		82 of 1006 (1e-6) BBX31(Orphan)/col-BBX31-DAP-Seq(GSE60143)/Homer
+		83 of 1006 (1e-6) AT2G28810(C2C2dof)/colamp-AT2G28810-DAP-Seq(GSE60143)/Homer
+		84 of 1006 (1e-6) IDD5(C2H2)/colamp-IDD5-DAP-Seq(GSE60143)/Homer
+		85 of 1006 (1e-6) NUC(C2H2)/col-NUC-DAP-Seq(GSE60143)/Homer
+		86 of 1006 (1e-6) dof45(C2C2dof)/col-dof45-DAP-Seq(GSE60143)/Homer
+		87 of 1006 (1e-6) BPC1(BBRBPC)/colamp-BPC1-DAP-Seq(GSE60143)/Homer
+		88 of 1006 (1e-5) dof43(C2C2dof)/colamp-dof43-DAP-Seq(GSE60143)/Homer
+		89 of 1006 (1e-5) AT3G12130(C3H)/colamp-AT3G12130-DAP-Seq(GSE60143)/Homer
+		90 of 1006 (1e-5) At5g62940(C2C2dof)/col-At5g62940-DAP-Seq(GSE60143)/Homer
+		91 of 1006 (1e-5) Adof1(C2C2dof)/col-Adof1-DAP-Seq(GSE60143)/Homer
+		92 of 1006 (1e-5) TCP16(TCP)/colamp-TCP16-DAP-Seq(GSE60143)/Homer
+		93 of 1006 (1e-5) Trl(Zf)/S2-GAGAfactor-ChIP-Seq(GSE40646)/Homer
+		94 of 1006 (1e-5) OBP1(C2C2dof)/col-OBP1-DAP-Seq(GSE60143)/Homer
+		95 of 1006 (1e-5) WRKY75(WRKY)/col-WRKY75-DAP-Seq(GSE60143)/Homer
+		96 of 1006 (1e-5) PCF/Arabidopsis-Promoters/Homer
+		97 of 1006 (1e-5) At5g66730(C2H2)/colamp-At5g66730-DAP-Seq(GSE60143)/Homer
+		98 of 1006 (1e-5) WRKY6(WRKY)/colamp-WRKY6-DAP-Seq(GSE60143)/Homer
+		99 of 1006 (1e-5) TFE3(bHLH)/MEF-TFE3-ChIP-Seq(GSE75757)/Homer
+		100 of 1006 (1e-5) IDD7(C2H2)/col-IDD7-DAP-Seq(GSE60143)/Homer
+		101 of 1006 (1e-5) TGA10(bZIP)/colamp-TGA10-DAP-Seq(GSE60143)/Homer
+		102 of 1006 (1e-5) AT3G52440(C2C2dof)/colamp-AT3G52440-DAP-Seq(GSE60143)/Homer
+		103 of 1006 (1e-5) At1g64620(C2C2dof)/colamp-At1g64620-DAP-Seq(GSE60143)/Homer
+		104 of 1006 (1e-5) AT1G47655(C2C2dof)/colamp-AT1G47655-DAP-Seq(GSE60143)/Homer
+		105 of 1006 (1e-5) WRKY15(WRKY)/col-WRKY15-DAP-Seq(GSE60143)/Homer
+		106 of 1006 (1e-5) ANAC047(NAC)/colamp-ANAC047-DAP-Seq(GSE60143)/Homer
+		107 of 1006 (1e-5) WRKY65(WRKY)/colamp-WRKY65-DAP-Seq(GSE60143)/Homer
+		108 of 1006 (1e-5) IDD4(C2H2)/col-IDD4-DAP-Seq(GSE60143)/Homer
+		109 of 1006 (1e-5) WRKY22(WRKY)/colamp-WRKY22-DAP-Seq(GSE60143)/Homer
+		110 of 1006 (1e-5) WRKY29(WRKY)/colamp-WRKY29-DAP-Seq(GSE60143)/Homer
+		111 of 1006 (1e-4) WRKY27(WRKY)/colamp-WRKY27-DAP-Seq(GSE60143)/Homer
+		112 of 1006 (1e-4) WRKY31(WRKY)/colamp-WRKY31-DAP-Seq(GSE60143)/Homer
+		113 of 1006 (1e-4) WRKY28(WRKY)/col-WRKY28-DAP-Seq(GSE60143)/Homer
+		114 of 1006 (1e-4) AT5G59990(C2C2COlike)/colamp-AT5G59990-DAP-Seq(GSE60143)/Homer
+		115 of 1006 (1e-4) NFY(CCAAT)/Promoter/Homer
+		116 of 1006 (1e-4) TGA4(bZIP)/colamp-TGA4-DAP-Seq(GSE60143)/Homer
+		117 of 1006 (1e-4) JKD(C2H2)/col-JKD-DAP-Seq(GSE60143)/Homer
+		118 of 1006 (1e-4) WRKY40(WRKY)/colamp-WRKY40-DAP-Seq(GSE60143)/Homer
+		119 of 1006 (1e-4) RIN(MADS)/Tomato-RIN-ChIP-Seq(GSE116581)/Homer
+		120 of 1006 (1e-4) WRKY26(WRKY)/colamp-WRKY26-DAP-Seq(GSE60143)/Homer
+		121 of 1006 (1e-4) PTF1(TCP)/colamp-PTF1-DAP-Seq(GSE60143)/Homer
+		122 of 1006 (1e-4) ANAC038(NAC)/col-ANAC038-DAP-Seq(GSE60143)/Homer
+		123 of 1006 (1e-4) Tgif1(Homeobox)/mES-Tgif1-ChIP-Seq(GSE55404)/Homer
+		124 of 1006 (1e-4) ANL2(HB)/col-ANL2-DAP-Seq(GSE60143)/Homer
+		125 of 1006 (1e-4) BPC6(BBRBPC)/col-BPC6-DAP-Seq(GSE60143)/Homer
+		126 of 1006 (1e-4) WRKY43(WRKY)/colamp-WRKY43-DAP-Seq(GSE60143)/Homer
+		127 of 1006 (1e-4) At3g60580(C2H2)/col-At3g60580-DAP-Seq(GSE60143)/Homer
+		128 of 1006 (1e-4) TCP1(TCP)/col-TCP1-DAP-Seq(GSE60143)/Homer
+		129 of 1006 (1e-4) bZIP50(bZIP)/colamp-bZIP50-DAP-Seq(GSE60143)/Homer
+		130 of 1006 (1e-4) WRKY21(WRKY)/colamp-WRKY21-DAP-Seq(GSE60143)/Homer
+		131 of 1006 (1e-4) WRKY14(WRKY)/colamp-WRKY14-DAP-Seq(GSE60143)/Homer
+		132 of 1006 (1e-4) CDF3(C2C2dof)/colamp-CDF3-DAP-Seq(GSE60143)/Homer
+		133 of 1006 (1e-4) ANAC046(NAC)/colamp-ANAC046-DAP-Seq(GSE60143)/Homer
+		134 of 1006 (1e-4) dof24(C2C2dof)/col-dof24-DAP-Seq(GSE60143)/Homer
+		135 of 1006 (1e-4) TGA9(bZIP)/colamp-TGA9-DAP-Seq(GSE60143)/Homer
+		136 of 1006 (1e-3) WRKY45(WRKY)/col-WRKY45-DAP-Seq(GSE60143)/Homer
+		137 of 1006 (1e-3) Unknown1/Arabidopsis-Promoters/Homer
+		138 of 1006 (1e-3) ATHB21(HB)/colamp-ATHB21-DAP-Seq(GSE60143)/Homer
+		139 of 1006 (1e-3) WRKY33(WRKY)/col-WRKY33-DAP-Seq(GSE60143)/Homer
+		140 of 1006 (1e-3) TGA2(bZIP)/colamp-TGA2-DAP-Seq(GSE60143)/Homer
+		141 of 1006 (1e-3) Meis1(Homeobox)/MastCells-Meis1-ChIP-Seq(GSE48085)/Homer
+		142 of 1006 (1e-3) NAM(NAC)/col-NAM-DAP-Seq(GSE60143)/Homer
+		143 of 1006 (1e-3) CRE(bZIP)/Promoter/Homer
+		144 of 1006 (1e-3) Ascl2(bHLH)/ESC-Ascl2-ChIP-Seq(GSE97712)/Homer
+		145 of 1006 (1e-3) WRKY30(WRKY)/colamp-WRKY30-DAP-Seq(GSE60143)/Homer
+		146 of 1006 (1e-3) AT3G42860(zfGRF)/col-AT3G42860-DAP-Seq(GSE60143)/Homer
+		147 of 1006 (1e-3) WRKY3(WRKY)/col-WRKY3-DAP-Seq(GSE60143)/Homer
+		148 of 1006 (1e-3) NAP(NAC)/col-NAP-DAP-Seq(GSE60143)/Homer
+		149 of 1006 (1e-3) TAGL1(MADS)/Tomato-TAGL1-ChIP-Seq(GSE116581)/Homer
+		150 of 1006 (1e-3) bZIP18(bZIP)/colamp-bZIP18-DAP-Seq(GSE60143)/Homer
+		151 of 1006 (1e-3) WRKY25(WRKY)/colamp-WRKY25-DAP-Seq(GSE60143)/Homer
+		152 of 1006 (1e-3) WRKY24(WRKY)/colamp-WRKY24-DAP-Seq(GSE60143)/Homer
+		153 of 1006 (1e-3) TCP17(TCP)/col-TCP17-DAP-Seq(GSE60143)/Homer
+		154 of 1006 (1e-3) NLP7(RWPRK)/col-NLP7-DAP-Seq(GSE60143)/Homer
+		155 of 1006 (1e-3) MYB96(MYB)/colamp-MYB96-DAP-Seq(GSE60143)/Homer
+		156 of 1006 (1e-3) WRKY47(WRKY)/colamp-WRKY47-DAP-Seq(GSE60143)/Homer
+		157 of 1006 (1e-3) bHLH130(bHLH)/col-bHLH130-DAP-Seq(GSE60143)/Homer
+		158 of 1006 (1e-3) FEA4(bZIP)/Corn-FEA4-ChIP-Seq(GSE61954)/Homer
+		159 of 1006 (1e-3) WRKY11(WRKY)/col-WRKY11-DAP-Seq(GSE60143)/Homer
+		160 of 1006 (1e-3) WRKY42(WRKY)/colamp-WRKY42-DAP-Seq(GSE60143)/Homer
+		161 of 1006 (1e-3) MYB88(MYB)/col-MYB88-DAP-Seq(GSE60143)/Homer
+		162 of 1006 (1e-3) OBP4(C2C2dof)/col-OBP4-DAP-Seq(GSE60143)/Homer
+		163 of 1006 (1e-3) AT4G27900(C2C2COlike)/col-AT4G27900-DAP-Seq(GSE60143)/Homer
+		164 of 1006 (1e-3) MGP(C2H2)/colamp-MGP-DAP-Seq(GSE60143)/Homer
+		165 of 1006 (1e-3) At4g38000(C2C2dof)/col-At4g38000-DAP-Seq(GSE60143)/Homer
+		166 of 1006 (1e-3) SeqBias: A/T bias
+		167 of 1006 (1e-3) AT5G66940(C2C2dof)/col-AT5G66940-DAP-Seq(GSE60143)/Homer
+		168 of 1006 (1e-3) ANAC079(NAC)/colamp-ANAC079-DAP-Seq(GSE60143)/Homer
+		169 of 1006 (1e-3) bHLH157(bHLH)/col-bHLH157-DAP-Seq(GSE60143)/Homer
+		170 of 1006 (1e-3) SeqBias: GA-repeat
+		171 of 1006 (1e-3) TGA6(bZIP)/colamp-TGA6-DAP-Seq(GSE60143)/Homer
+		172 of 1006 (1e-3) WRKY55(WRKY)/col-WRKY55-DAP-Seq(GSE60143)/Homer
+		173 of 1006 (1e-3) WRKY71(WRKY)/col-WRKY71-DAP-Seq(GSE60143)/Homer
+		174 of 1006 (1e-3) ATHB13(Homeobox)/col-ATHB13-DAP-Seq(GSE60143)/Homer
+		175 of 1006 (1e-3) WRKY20(WRKY)/col-WRKY20-DAP-Seq(GSE60143)/Homer
+		176 of 1006 (1e-3) SEP3(MADS)/Arabidoposis-Flower-Sep3-ChIP-Seq/Homer
+		177 of 1006 (1e-2) AtIDD11(C2H2)/colamp-AtIDD11-DAP-Seq(GSE60143)/Homer
+		178 of 1006 (1e-2) TGA1(bZIP)/colamp-TGA1-DAP-Seq(GSE60143)/Homer
+		179 of 1006 (1e-2) EGL-5(Homeobox)/cElegans-L3-EGL5-ChIP-Seq(modEncode)/Homer
+		180 of 1006 (1e-2) MYB30(MYB)/colamp-MYB30-DAP-Seq(GSE60143)/Homer
+		181 of 1006 (1e-2) AT4G00250(GeBP)/col-AT4G00250-DAP-Seq(GSE60143)/Homer
+		182 of 1006 (1e-2) GRF9(GRF)/colamp-GRF9-DAP-Seq(GSE60143)/Homer
+		183 of 1006 (1e-2) LMI1(HB)/colamp-LMI1-DAP-Seq(GSE60143)/Homer
+		184 of 1006 (1e-2) MYB44(MYB)/colamp-MYB44-DAP-Seq(GSE60143)/Homer
+		185 of 1006 (1e-2) CBF4(AP2EREBP)/colamp-CBF4-DAP-Seq(GSE60143)/Homer
+		186 of 1006 (1e-2) HDG1(Homeobox)/col100-HDG1-DAP-Seq(GSE60143)/Homer
+		187 of 1006 (1e-2) bZIP42(bZIP)/colamp-bZIP42-DAP-Seq(GSE60143)/Homer
+		188 of 1006 (1e-2) AZF1(C2H2)/colamp-AZF1-DAP-Seq(GSE60143)/Homer
+		189 of 1006 (1e-2) MYB3R5(MYB)/col-MYB3R5-DAP-Seq(GSE60143)/Homer
+		190 of 1006 (1e-2) MYB94(MYB)/col-MYB94-DAP-Seq(GSE60143)/Homer
+		191 of 1006 (1e-2) AT1G77200(AP2EREBP)/colamp-AT1G77200-DAP-Seq(GSE60143)/Homer
+		192 of 1006 (1e-2) WRKY50(WRKY)/col-WRKY50-DAP-Seq(GSE60143)/Homer
+		193 of 1006 (1e-2) bHLH122(bHLH)/col100-bHLH122-DAP-Seq(GSE60143)/Homer
+		194 of 1006 (1e-2) MYB40(MYB)/col-MYB40-DAP-Seq(GSE60143)/Homer
+		195 of 1006 (1e-2) At1g19000(MYBrelated)/colamp-At1g19000-DAP-Seq(GSE60143)/Homer
+		196 of 1006 (1e-2) WRKY8(WRKY)/colamp-WRKY8-DAP-Seq(GSE60143)/Homer
+		197 of 1006 (1e-2) ATHB6(Homeobox)/col-ATHB6-DAP-Seq(GSE60143)/Homer
+		198 of 1006 (1e-2) AT5G56840(MYBrelated)/colamp-AT5G56840-DAP-Seq(GSE60143)/Homer
+		199 of 1006 (1e-2) WRKY18(WRKY)/col-WRKY18-DAP-Seq(GSE60143)/Homer
+		200 of 1006 (1e-2) ATHB7(Homeobox)/col-ATHB7-DAP-Seq(GSE60143)/Homer
+		201 of 1006 (1e-2) Zac1(Zf)/Neuro2A-Plagl1-ChIP-Seq(GSE75942)/Homer
+		202 of 1006 (1e-2) bHLH10(bHLH)/colamp-bHLH10-DAP-Seq(GSE60143)/Homer
+		203 of 1006 (1e-2) AT2G15740(C2H2)/col-AT2G15740-DAP-Seq(GSE60143)/Homer
+		204 of 1006 (1e-2) NFIL3(bZIP)/HepG2-NFIL3-ChIP-Seq(Encode)/Homer
+		205 of 1006 (1e-2) HDG7(HB)/col-HDG7-DAP-Seq(GSE60143)/Homer
+		206 of 1006 (1e-2) COG1(C2C2dof)/col-COG1-DAP-Seq(GSE60143)/Homer
+		207 of 1006 (1e-2) At1g74840(MYBrelated)/col100-At1g74840-DAP-Seq(GSE60143)/Homer
+		208 of 1006 (1e-2) HuR(?)/HEK293-HuR-CLIP-Seq(GSE87887)/Homer
+		209 of 1006 (1e-2) Replumless(BLH)/Arabidopsis-RPL.GFP-ChIP-Seq(GSE78727)/Homer
+		210 of 1006 (1e-2) TGA3(bZIP)/colamp-TGA3-DAP-Seq(GSE60143)/Homer
+		211 of 1006 (1e-2) AT5G61620(MYBrelated)/colamp-AT5G61620-DAP-Seq(GSE60143)/Homer
+		212 of 1006 (1e-2) ATHB6(Homeobox)/Arabidopsis-HB6-ChIP-Seq(GSE80564)/Homer
+		213 of 1006 (1e-2) DDF1(AP2EREBP)/col-DDF1-DAP-Seq(GSE60143)/Homer
+		214 of 1006 (1e-2) At5g47390(MYBrelated)/col-At5g47390-DAP-Seq(GSE60143)/Homer
+		215 of 1006 (1e-2) bZIP52(bZIP)/colamp-bZIP52-DAP-Seq(GSE60143)/Homer
+		216 of 1006 (1e-2) MYB41(MYB)/col-MYB41-DAP-Seq(GSE60143)/Homer
+		217 of 1006 (1e-2) JunD(bZIP)/K562-JunD-ChIP-Seq/Homer
+		218 of 1006 (1e-2) Pit1+1bp(Homeobox)/GCrat-Pit1-ChIP-Seq(GSE58009)/Homer
+		219 of 1006 (1e-2) NF1:FOXA1(CTF,Forkhead)/LNCAP-FOXA1-ChIP-Seq(GSE27824)/Homer
+		220 of 1006 (1e-2) Bach1(bZIP)/K562-Bach1-ChIP-Seq(GSE31477)/Homer
+		221 of 1006 (1e-2) ATY13(MYB)/col-ATY13-DAP-Seq(GSE60143)/Homer
+		222 of 1006 (1e-2) Tbox:Smad(T-box,MAD)/ESCd5-Smad2_3-ChIP-Seq(GSE29422)/Homer
+		223 of 1006 (1e-2) At5g05790(MYBrelated)/col-At5g05790-DAP-Seq(GSE60143)/Homer
+		224 of 1006 (1e-2) Tbet(T-box)/CD8-Tbet-ChIP-Seq(GSE33802)/Homer
+		225 of 1006 (1e-2) PBX1(Homeobox)/MCF7-PBX1-ChIP-Seq(GSE28007)/Homer
+	----------------------------------------------------------
+	De novo motif finding (HOMER)
+
+	Scanning input files...
+	Parsing sequences...
+	|0%                                   50%                                  100%|
+	================================================================================
+	Total number of Oligos: 130906
+	Autoadjustment for sequence coverage in background: 1.00x
+
+	Oligos: 130906 of 137975 max
+	Tree  : 267004 of 689875 max
+	Optimizing memory usage...
+	Cache length = 11180
+	Using binomial scoring
+
+	Global Optimization Phase: Looking for enriched oligos with up to 2 mismatches...
+
+	Screening oligos 130906 (allowing 0 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		59.14% skipped, 40.86% checked (53487 of 130906), of those checked:
+		59.14% not in target, 0.00% increased p-value, 0.00% high p-value
+
+	Screening oligos 130906 (allowing 1 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		59.14% skipped, 40.86% checked (53487 of 130906), of those checked:
+		0.00% not in target, 23.43% increased p-value, 24.47% high p-value
+
+	Screening oligos 130906 (allowing 2 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		89.11% skipped, 10.89% checked (14258 of 130906), of those checked:
+		0.00% not in target, 5.32% increased p-value, 0.00% high p-value
+	Reading input files...
+	49999 total sequences read
+	Cache length = 11180
+	Using binomial scoring
+
+	Local Optimization Phase:
+	1 of 25 Initial Sequence: CACGTGGCA... (-99.291)
+		Round 1: -167.58 CACGTGGCA T:694.0(53.69%),B:12741.5(25.30%),P:1e-72
+		Round 2: -190.67 CACGTGDCR T:476.0(41.02%),B:6839.5(14.50%),P:1e-82
+		Round 3: -200.00 CACGTGNSA T:523.0(44.02%),B:7620.4(16.01%),P:1e-86
+		Round 4: -200.00 CACGTGNSA T:523.0(44.02%),B:7620.4(16.01%),P:1e-86
+		=Final=: -145.95 CACGTGNSA T:279.0(30.93%),B:4526.6(10.36%),P:1e-63
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	2 of 25 Initial Sequence: GAGAGAGAG... (-88.060)
+		Round 1: -112.35 GAGAGAGAG T:253.0(24.47%),B:3695.2(8.11%),P:1e-48
+		Round 2: -112.35 GAGAGAGAG T:253.0(24.47%),B:3695.2(8.11%),P:1e-48
+		=Final=: -40.02 GAGAGAGAG T:115.0(12.75%),B:2290.0(5.24%),P:1e-17
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	3 of 25 Initial Sequence: GGGGCCCAC... (-67.438)
+		Round 1: -86.44 GGGGCCCAC T:308.0(28.94%),B:5920.5(12.68%),P:1e-37
+		Round 2: -86.44 GGGGCCCAC T:308.0(28.94%),B:5920.5(12.68%),P:1e-37
+		=Final=: -70.35 GGGGCCCAC T:207.0(22.95%),B:4257.3(9.75%),P:1e-30
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	4 of 25 Initial Sequence: TTTTTTTTT... (-15.655)
+		Round 1: -15.66 TTTTTTTTT T:1567.0(82.42%),B:60938.1(75.22%),P:1e-6
+		Round 2: -15.66 TTTTTTTTT T:1567.0(82.42%),B:60938.1(75.22%),P:1e-6
+		=Final=: -10.48 TTTTTTTTT T:383.0(42.46%),B:15680.0(35.90%),P:1e-4
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	5 of 25 Initial Sequence: AAAAACAAA... (-18.721)
+		Round 1: -1.51 ACACACACA T:131.0(13.52%),B:5841.0(12.52%),P:1e0
+		Round 2: -7.99 MCACACACA T:59.0(6.34%),B:1740.0(3.91%),P:1e-3
+		Round 3: -12.07 ACACACACA T:64.0(6.85%),B:1635.0(3.67%),P:1e-5
+		Round 4: -15.96 ACACACAYA T:97.0(10.20%),B:2585.3(5.75%),P:1e-6
+		Round 5: -15.96 ACACACAYA T:97.0(10.20%),B:2585.3(5.75%),P:1e-6
+		=Final=: -7.47 ACACACAYA T:48.0(5.32%),B:1399.1(3.20%),P:1e-3
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	6 of 25 Initial Sequence: TGACGTGTC... (-13.857)
+		Round 1: -27.15 TGACGTGTC T:91.0(9.60%),B:1844.5(4.13%),P:1e-11
+		Round 2: -27.15 TGACGTGTC T:91.0(9.60%),B:1844.5(4.13%),P:1e-11
+		=Final=: -19.35 TGACGTGTC T:63.0(6.98%),B:1351.5(3.09%),P:1e-8
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	7 of 25 Initial Sequence: CGCGTGAGA... (-13.450)
+		Round 1: -8.48 CGCGTGAGA T:58.0(6.23%),B:1665.5(3.74%),P:1e-3
+		Round 2: -9.54 CGCGTGAGA T:24.0(2.63%),B:444.4(1.01%),P:1e-4
+		Round 3: -10.59 CGCGTGAGT T:10.0(1.10%),B:73.4(0.17%),P:1e-4
+		Round 4: -11.30 CGCGTGMRT T:26.0(2.84%),B:452.6(1.03%),P:1e-4
+		Round 5: -14.51 CGCGTGAGT T:21.0(2.30%),B:251.3(0.57%),P:1e-6
+		Round 6: -14.51 CGCGTGAGT T:21.0(2.30%),B:251.3(0.57%),P:1e-6
+		=Final=: -16.14 CGCGTGAGT T:21.0(2.33%),B:247.9(0.57%),P:1e-7
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	8 of 25 Initial Sequence: TGACAGTTG... (-11.604)
+		Round 1: -24.37 TGACAGTTG T:23.0(2.52%),B:171.6(0.39%),P:1e-10
+		Round 2: -24.37 TGACAGTTG T:23.0(2.52%),B:171.6(0.39%),P:1e-10
+		=Final=: -26.16 TGACAGTTG T:23.0(2.55%),B:171.2(0.39%),P:1e-11
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	9 of 25 Initial Sequence: TGACGTAAT... (-9.886)
+		Round 1: -16.77 TGACGTAAT T:26.0(2.84%),B:331.9(0.76%),P:1e-7
+		Round 2: -20.14 TGACGTAAT T:32.0(3.49%),B:415.2(0.95%),P:1e-8
+		Round 3: -20.14 TGACGTAAT T:32.0(3.49%),B:415.2(0.95%),P:1e-8
+		=Final=: -19.25 TGACGTAAT T:30.0(3.33%),B:405.0(0.93%),P:1e-8
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	10 of 25 Initial Sequence: GATTGGACC... (-9.610)
+		Round 1: -18.76 GATTGGACC T:33.0(3.59%),B:467.0(1.06%),P:1e-8
+		Round 2: -20.04 GATWGGACC T:38.0(4.13%),B:570.5(1.30%),P:1e-8
+		Round 3: -20.04 GATWGGACC T:38.0(4.13%),B:570.5(1.30%),P:1e-8
+		=Final=: -21.16 GATWGGACC T:38.0(4.21%),B:568.4(1.30%),P:1e-9
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	Remaining seeds don't look promising (After initial 5 motifs, logp -8.856 > -8.955)
+
+	Finalizing Enrichment Statistics (new in v3.4)
+	Reading input files...
+	49999 total sequences read
+	Cache length = 11180
+	Using binomial scoring
+	Checking enrichment of 10 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+	Output in file: ./homerMotifs.motifs9
+
+	(Motifs in homer2 format)
+	Determining similar motifs... 10 reduced to 8 motifs
+	Outputing HTML and sequence logos for motif comparison...
+	Checking de novo motifs against known motifs...
+	Formatting HTML page...
+		1 of 8 (1e-63) similar to BMAL1(bHLH)/Liver-Bmal1-ChIP-Seq(GSE39860)/Homer(0.954)
+		2 of 8 (1e-35) similar to Glyma19g26560.1/MA1019.1/Jaspar(0.970)
+		3 of 8 (1e-17) similar to SeqBias: GA-repeat(0.941)
+		4 of 8 (1e-12) similar to Replumless(BLH)/Arabidopsis-RPL.GFP-ChIP-Seq(GSE78727)/Homer(0.716)
+		5 of 8 (1e-10) similar to AMYB(HTH)/Testes-AMYB-ChIP-Seq(GSE44588)/Homer(0.870)
+		6 of 8 (1e-9) similar to FOSL2::JUN(var.2)/MA1131.1/Jaspar(0.873)
+		7 of 8 (1e-5) similar to SeqBias: polyA-repeat(0.949)
+		8 of 8 (1e-4) similar to SeqBias: CA-repeat(0.878)
+	Job finished - if results look good, please send beer to ..
+
+	Cleaning up tmp files...
+
